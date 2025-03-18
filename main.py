@@ -11,7 +11,7 @@ import pyaudio
 
 recognizer=sr.Recognizer()
 engine=pyttsx3.init()
-newsapi= "53062284a8e84e689bc8a3f51f63b898"
+newsapi= "..........."
 
 # Function to adjust the speech rate
 def set_speech_rate(rate):
@@ -30,7 +30,7 @@ def speek(text):
 
 def aiprocess(command):
     # Configure API key
-    genai.configure(api_key="AIzaSyC9JQYIxFw3QV-JisK6wTowSk7CQspEa08")
+    genai.configure(api_key=".............")
 
     # Initialize the model
     model = genai.GenerativeModel("gemini-1.5-flash")
@@ -67,7 +67,7 @@ def processCommand(c):
 
     #Tell the news
     elif "news" in c.lower():
-        r = requests.get("https://newsapi.org/v2/top-headlines?country=us&apiKey=53062284a8e84e689bc8a3f51f63b898")
+        r = requests.get("https://newsapi.org/v2/top-headlines?country=us&apiKey=................")
 
 
     # Extract the headlines
